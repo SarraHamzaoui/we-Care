@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="espaceemp.css">
+    <script src="espaceemp.js" defer></script>
+    <title>Espace Babysitter</title>
+</head>
+
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span><img src="IMG_2477-removebg-preview.png" alt="logo" ></span></a>
+    <nav class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="espacep.html">Espace Parents</a>
+        <a href="espaceemp.html">Espace Babysitter</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"> </i>
+    </div>
+
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="" class="connexion" id="form1">
+        <h3>connexion</h3>
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entez votre email" id="email2" name="email2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+        <div class="controle">
+            <input type="password" class="box" placeholder="Entez votre mot de passe" id="password3" name="password3">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye3" onclick="MyFunction3()">
+            <i id="hide5" class="fa-regular fa-eye"></i>
+            <i id="hide6" class="fa-regular fa-eye-slash"></i>
+        </span>
+
+        <button class="btn" type="submit">Se connecter maintenant </button>
+
+        <center>
+            <p>Mot de passe oublié? <a href="#"> Cliquez ici</a></p>
+            <p> Vous n'avez pas de compte? <a href="#" id="liendecreaction">S'inscrire </a></p>
+        </center>
+    </form>
+    <form action="" class="creer " id="form2">
+        <h3>créer un compte</h3>
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entrez le nom d'utilisateur" id="nom" name="nom">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entez votre email" id="email" name="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+
+        <div class="controle">
+            <input type="password" class="box" placeholder="Entez votre mot de passe" id="password" name="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye" onclick="MyFunction()">
+            <i id="hide1" class="fa-regular fa-eye"></i>
+            <i id="hide2" class="fa-regular fa-eye-slash"></i>
+        </span>
+        <div class="controle">
+            <input type="password" class="box" placeholder="Confirmez votre mot de passe" id="password2" name="password2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye2" onclick="MyFunction2()">
+            <i id="hide3" class="fa-regular fa-eye"></i>
+            <i id="hide4" class="fa-regular fa-eye-slash"></i>
+        </span>
+        <button class="btn" type="submit">Confirmer </button>
+
+        <br>
+        <center>
+            <p> Vous avez déjà un compte? <a href="#" id="lienconnection">Se connecter </a></p>
+        </center>
+    </form>
+</div>
+
+
+
+<body>
+    <br><br><br>
+    <br>
+    <h3 class="titrehaut">Merci pour l'intérêt porté à travailler à nos côtés.</h3>
+    <h3 class="titrehaut">Veillez répondre en complétant ce formulaire de candidature. </h3>
+    <div class="espaceem">
+        <form id="formcondidature">
+            <h3>Formulaire de Candidature</h3>
+            <p class="titre">Je suis à l'aise pour m'occuper de :</p>
+
+            <div class="container">
+                <span class="minus">
+                              <span>
+                                  
+                              </span>
+                </span>
+                <span class="num">1</span>
+                <span class="plus">
+                              <span>
+
+                              </span>
+                <span></span>
+                </span>
+            </div>
+
+            <p class="sousincremental">enfants</p>
+            <div class="check">
+                <input type="checkbox" id="enfant1">
+                <label>Bébés(0-11mois)</label>
+                <br>
+                <input type="checkbox" id="enfant2">
+                <label>Enfants(1-3ans)</label>
+                <br>
+                <input type="checkbox" id="enfant3">
+                <label>Enfants(4-5ans)</label>
+                <br>
+                <input type="checkbox" id="enfant4">
+                <label>Enfants(6+ans)</label>
+                <br>
+                <input type="checkbox" id="enfant5">
+                <label>Enfants malades</label>
+            </div>
+            <br>
+            <p class="titre">Je suis de :</p>
+            <select class="zone">
+                <option value="j'habite à" selected disabled>Gouvernorats</option>
+                <option >Ariana</option>
+                <option >Manouba</option>
+                <option >Tunis</option>
+                <option >Ben Arous</option>
+            </select>
+            <br>
+            <button type="button" class="btn" id="boutton1">Suivant</button>
+        </form>
+        <form id="forminformation">
+            <h3>Vous etes au point de terminer</h3>
+            <input type="text" placeholder="Nom" required>
+            <input type="text" placeholder="Prenom" required>
+            <input type="text" placeholder="Email" required>
+            <input type="text" placeholder="Date de naissance" required>
+            <input type="date" placeholder="Date de disponibilité" required>
+
+            <div><button type="button" class="btn" id="boutton2">Precedent</button></div>
+            <div><button type="button" class="btn" id="boutton3">Suivant</button></div>
+        </form>
+        <form id="formcv">
+            <h3>Importer votre cv</h3>
+            <section class="tire">
+                <input type="file" class="file-input">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>parcourir le fichier à télécharger</p>
+            </section>
+            <section class="progress-area">
+                <li class="row1">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="content5">
+                        <div class="details">
+                            <span class="name"> image_01.png / Uploading</span>
+                            <sapn class="percent">50%</sapn>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                </li>
+            </section>
+            <section class="upload-area">
+                <li class="row1">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="content5">
+                        <div class="details">
+                            <span class="name"> image_01.png / Uploaded</span>
+                            <sapn class="size">70KB</sapn>
+                        </div>
+                    </div>
+                    <i class="fas fa-check"></i>
+                </li>
+            </section>
+            <div><button type="button" class="btn" id="boutton4">Precedent</button></div>
+
+            <div><button type="button" class="btn" id="boutton5" onclick="mercii()">Envoyer</button></div>
+        </form>
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-call">
+                <small>1er étape</small>
+            </div>
+            <div class="step-call">
+                <small>2ème étape</small>
+            </div>
+            <div class="step-call">
+                <small>3ème  étape</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-container" id="m_container">
+        <div class="m">
+            <h1>Votre demande sera prise en compte <br></h1>
+            <h3>Nous vous répondrons dans les meilleurs délais.</h3>
+        </div>
+    </div>
+    <footer>
+        <div class="row1 ">
+            <div class="col1 ">
+                <img src="IMG_2477-removebg-preview.png " alt="logo ">
+                <p class="ft "><em>" WE CARE " </em>est une application web qui facilite votre vie en prenant soin de vos enfants et donnant des conseils pour améliorer vos relations avec eux. On offre aussi un espace pour ceux qui veulent nous rejoindre. </p>
+            </div>
+            <div class="col1 ">
+                <h3>Contact</h3>
+                <p class="email-id ">wecare@outlook.com</p>
+                <h5>+216 54 764 765 9</h5>
+            </div>
+            <div class="col1 ">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="acceuil.html ">Acceuil</a></li>
+                    <li><a href="conseils.html ">Conseils</a></li>
+                    <li><a href="espacep.html ">Espace parents</a></li>
+                    <li><a href="espaceemp.html">Espace Babysitter</a></li>
+                </ul>
+            </div>
+            <div class="col1 ">
+                <h3>newsletter</h3>
+                <p>Recevez en avant première les dernières nouveautés et exlusivités </p>
+                <form class="f ">
+                    <i class="far fa-envelope "></i>
+                    <input type="email " placeholder="enter votre email " required>
+                    <button type="submit "> <i class="fas fa-arrow-right "></i></button>
+                </form>
+                <div class="social-icons ">
+                    <i class="fab fa-facebook-f "></i>
+                    <i class="fab fa-twitter "></i>
+                    <i class="fab fa-whatsapp "></i>
+                    <i class="fab fa-pinterest "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

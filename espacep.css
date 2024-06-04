@@ -1,0 +1,666 @@
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Francois+One&family=Mukta&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,600&family=Roboto:wght@100&family=Sansita+Swashed:wght@300&display=swap');
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: all .2s linear;
+    }
+    
+    
+    *::selection {
+        background: var(--blanc);
+        color: #ffb6c1;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 6rem;
+        scroll-behavior: smooth;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: #ce3a64;
+        color: #fff;
+        padding: 8rem -6rem;
+        border: 2rem (solid #ce3a64);
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    
+    .connexion {
+        display: none;
+    }
+    
+    .btn:hover {
+        background: rgba(255, 165, 0, .2);
+        color: #ce3a64;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ffb6c1;
+        display: flex;
+        align-items: center;
+        z-index: 1000;
+        justify-content: space-between;
+        padding: -5rem 9%;
+        height: 60px;
+    }
+    
+    header.logo span {
+        color: var(--blanc);
+    }
+    
+    header .navbar a {
+        color: #fefee2;
+        font-size: 2rem;
+        margin: 0 .9rem;
+        float: left;
+        padding: 20px;
+        margin-bottom: -30px;
+        text-decoration: none;
+    }
+    
+    header .navbar a:hover {
+        background-color: #ce3a64;
+    }
+    
+    header img {
+        width: 130px;
+        height: 90px;
+    }
+    
+    header .icons i {
+        font-size: 2.5rem;
+        color: #fefee2;
+        cursor: pointer;
+        margin-right: 2rem;
+        padding-right: 70px;
+    }
+    
+    header .icons i:hover {
+        color: #ce3a64;
+    }
+    
+    .login-form-container {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        z-index: 1000;
+        min-height: 100vh;
+        width: 100%;
+        background: #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 92.9%;
+    }
+    
+    .login-form-container.active {
+        top: 0;
+    }
+    
+    .login-form-container form {
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 50rem;
+    }
+    
+    .login-form-container form h3 {
+        font-size: 3rem;
+        color: #ce3a64;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .login-form-container form .box {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: black;
+        margin: 0.5rem 0;
+        border: .1rem solid rgba(0, 0, 0, .3);
+        text-transform: none;
+    }
+    
+    .login-form-container form .box:focus {
+        border-color: #ce3a64;
+    }
+    
+    .login-form-container form #remember {
+        margin: 2rem 0;
+    }
+    
+    .login-form-container form h6 {
+        font-size: 1.5rem;
+        color: black;
+        margin-top: 18px;
+        margin-left: 5px;
+    }
+    
+    .rappeler {
+        display: flex;
+    }
+    
+    .login-form-container form .btn {
+        display: block;
+        width: 100%;
+    }
+    
+    .login-form-container form p {
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+        color: #666;
+    }
+    
+    .login-form-container form p a {
+        color: #666;
+    }
+    
+    .login-form-container form p align-self::hover {
+        color: #666;
+        text-decoration: underline;
+    }
+    
+    .login-form-container #form-close {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #menu-bar {
+        color: #fff;
+        border: .1rem solid #fff;
+        border-radius: .5rem;
+        font-size: 3rem;
+        padding: .5rem 1.2rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .heading {
+        text-align: center;
+        font-family: Dancing Script;
+        color: #eb4272;
+        font-size: 70px;
+    }
+    
+    body {
+        height: 200rem;
+    }
+    
+    .pakages .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    .pakages .box-container .box {
+        flex: 1 1 30rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    }
+    
+    .pakages .box-container .box img {
+        height: 13rem;
+        width: 50%;
+        object-fit: cover;
+    }
+    
+    .pakages .box-container .box .content {
+        padding: 2rem;
+    }
+    
+    .pakages .box-container .box .content h3 {
+        font-size: 2rem;
+        color: #333;
+    }
+    
+    .pakages .box-container .box .content h3 i {
+        color: #ce3a64;
+    }
+    
+    .pakages .box-container .box .content p {
+        font-size: 1.6rem;
+        color: #666;
+    }
+    
+    .pakages .box-container .box .content .stars i {
+        font-size: 1.7rem;
+        color: goldenrod;
+    }
+    
+    .pakages .box-container .box .content .price {
+        font-size: 2rem;
+        color: #333;
+        padding-top: 1rem;
+    }
+    
+    .icon i {
+        font-size: 2.5rem;
+        color: #333;
+        cursor: pointer;
+        padding: 1rem;
+        background: #f8f8d5;
+        border-radius: 20%;
+    }
+    
+    .icon i:hover {
+        color: #ce3a64;
+    }
+    
+    .parent form {
+        border-radius: .5rem;
+        background-color: rgba(211, 201, 201, 0.3);
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    
+    .parent form .box {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: .5rem;
+        background-color: white;
+        padding: 1.2rem 1.4rem;
+        font-size: 1.7rem;
+        color: black;
+        text-transform: none;
+    }
+    
+    .age {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: .5rem;
+        padding: 1.2rem 1.4rem;
+    }
+    
+    .qr {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .qr img {
+        width: 20px;
+    }
+    
+    .parent.active .qr {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.5s 0.05s ease;
+    }
+    
+    #generer {
+        padding-left: 520px;
+    }
+    
+    #check1 {
+        margin-left: 30px;
+    }
+    
+    #check2 {
+        margin-left: 275px;
+        margin-top: -28px;
+    }
+    
+    #check3 {
+        margin-left: 470px;
+        margin-top: -28px;
+    }
+    
+    .parent form label:hover {
+        color: black;
+    }
+    
+    parent form label:checked~label {
+        color: black;
+    }
+    
+    .parent form span {
+        font-size: 1.7rem;
+        color: black;
+    }
+    
+    .titre {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    
+    .war i {
+        font-size: 3.5rem;
+        color: orange;
+        padding-bottom: 4rem;
+        padding-right: 2rem;
+    }
+    
+    .fa-solid {
+        cursor: pointer;
+    }
+    
+    .qr img {
+        width: 150px;
+        margin-top: -120px;
+    }
+    
+    .war {
+        display: flex;
+    }
+    
+    .war p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-right: 220px;
+    }
+    
+    .reviews {
+        background-color: rgba(211, 201, 201, 0.3);
+    }
+    
+    .reviews .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, .5fr));
+        gap: 2rem;
+    }
+    
+    .reviews .box-container .box {
+        background-color: white;
+        text-align: center;
+        border-radius: .5rem;
+        padding: 2rem;
+        margin-top: 15%;
+    }
+    
+    .reviews .box-container .box img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+    
+    .reviews .box-container .box p {
+        padding: 2rem 0;
+        line-height: 2;
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 0;
+    }
+    
+    #client3 {
+        padding: 2rem 0;
+        line-height: 2;
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 30px;
+    }
+    
+    .reviews .box-container .box .stars {
+        padding: .5rem 1.5rem;
+        border-radius: .5rem;
+        background-color: #eee;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+    
+    .reviews .box-container .box .stars i {
+        font-size: 1.5rem;
+        color: goldenrod;
+    }
+    
+    .reviews .box-container .box h3 {
+        font-size: 2rem;
+        color: black;
+    }
+    
+    .reviews .box-container .box span {
+        color: #666;
+        font-size: 2rem;
+    }
+    /*debut avis*/
+    
+    .container3 {
+        width: 400px;
+        background: rgba(211, 201, 201, 0.3);
+        padding: 20px 30px;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgb(238, 229, 229);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .container3 .post {
+        display: none;
+    }
+    
+    .container3 .text {
+        font-size: 25px;
+        color: #666;
+        font-weight: 500;
+    }
+    
+    .container3 .edit {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    
+    .container3 .edit:hover {
+        text-decoration: underline;
+    }
+    
+    .container3 .star-widget input {
+        display: none;
+    }
+    
+    .star-widget label {
+        font-size: 40px;
+        color: rgb(78, 75, 75);
+        padding: 10px;
+        float: right;
+        transition: all 0.2s ease;
+    }
+    
+    input:not(:checked)~label:hover,
+    input:not(:checked)~label:hover~label {
+        color: goldenrod;
+    }
+    
+    input:checked~label {
+        color: #fd4;
+    }
+    
+    input#rate-5:checked~label {
+        color: #fe7;
+        text-shadow: 0 0 20px #952;
+    }
+    
+    #rate-1:checked~form p:before {
+        content: "Extrèmement insatisfait(e)😠";
+    }
+    
+    #rate-2:checked~form p:before {
+        content: "Peu insatisfait(e)😐";
+    }
+    
+    #rate-3:checked~form p:before {
+        content: "Peu satisfait(e)😖";
+    }
+    
+    #rate-4:checked~form p:before {
+        content: "Très satisfait(e)😎";
+    }
+    
+    #rate-5:checked~form p:before {
+        content: "Extrèmement satisfait(e)😍";
+    }
+    
+    .container3 form {
+        display: none;
+    }
+    
+    input:checked~form {
+        display: block;
+    }
+    
+    form p {
+        width: 100%;
+        font-size: 25px;
+        color: black;
+        font-weight: 500;
+        margin: 5px 0 20px 0;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    
+    form .textarea {
+        height: 100px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    form .textarea textarea {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: black;
+        border: 1px solid rgb(214, 210, 210);
+        background: white;
+        padding: 10px;
+        font-size: 17px;
+        resize: none;
+    }
+    /*fin avis*/
+    
+    footer {
+        width: 100%;
+        position: absolute;
+        bottom: 20;
+        background: #ffb6c1;
+        padding: 100px 0 30px;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 15px;
+    }
+    
+    .row1 {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+    .col1 {
+        flex-basis: 25%;
+        padding: 10px;
+    }
+    
+    .col1:nth-child(2),
+    .col1:nth-child(3) {
+        flex-basis: 15%;
+    }
+    
+    footer img {
+        width: 100px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+    }
+    
+    .col1 h3 {
+        color: #c9f5fd;
+        width: fit-content;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    .email-id {
+        width: fit-content;
+        border-bottom: 1px solid rgb(105, 101, 101);
+        margin: 20px 0;
+    }
+    
+    footer ul li {
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: rgb(59, 57, 57);
+    }
+    
+    .f {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(105, 101, 101);
+        margin-bottom: 50px;
+    }
+    
+    .f .far {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .f input {
+        width: 100%;
+        background: transparent;
+        color: rgb(105, 101, 101);
+        border: 0;
+        outline: none;
+    }
+    
+    .f button {
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .f button .fas {
+        font-size: 16px;
+        color: rgb(7, 7, 7);
+    }
+    
+    .social-icons .fab {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: rgb(7, 7, 7);
+        background: rgb(252, 243, 243);
+        margin-right: 15px;
+        cursor: pointer;
+    }

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="espacep.css">
+    <script src="espacep.js" defer></script>
+    <title>Document</title>
+</head>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span><img src="IMG_2477-removebg-preview.png" alt="logo" ></span></a>
+    <nav class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="espacep.html">Espace Parents</a>
+        <a href="espaceemp.html">Espace Babysitter</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"> </i>
+    </div>
+
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="" class="connexion">
+        <h3>connexion</h3>
+        <input type="email" class="box" placeholder="Entez votre email">
+        <input type="password" class="box" placeholder="Entez votre mot de passe">
+        <input type="checkbox" id="remember">
+        <!-- <label for="" > Se rappeler de moi</label>-->
+        <p> Se rappeler de moi</p>
+        <input type="submit" value="Se connecter maintenant" class="btn">
+        <center>
+            <p>Mot de passe oublié? <a href="#"> Cliquez ici</a></p>
+            <p> Vous n'avez pas de compte? <a href="#" id="liendecreaction">S'inscrire </a></p>
+        </center>
+    </form>
+    <form action="" class="creer">
+        <h3>créer un compte</h3>
+        <input type="text" class="box" placeholder="Entrez le nom d'utilisateur">
+        <input type="email" class="box" placeholder="Entez votre email">
+        <input type="password" class="box" placeholder="Entez votre mot de passe">
+        <input type="password" class="box" placeholder="Confirmez votre mot de passe">
+        <div class="rappeler">
+            <input type="checkbox" id="remember">
+            <h6> Se rappeler de moi</h6>
+        </div>
+        <input type="submit" value="Confirmer" class="btn">
+        <br>
+        <center>
+            <p> Vous avez déjà un compte? <a href="#" id="lienconnection">Se connecter </a></p>
+        </center>
+    </form>
+</div>
+
+<body>
+    <br><br>
+    <section class="parent" id="parent">
+        <section class="pakages" id="pakages">
+            <h1 class="heading">
+                Bienvenue à votre espace !
+            </h1>
+            <br><br>
+
+            <h3 class="titre"> 1ère étape : Veuillez choisir votre nounou :</h3>
+            <br><br>
+            <div class="box-container">
+                <div class="box">
+                    <center><img src="nounou1.jpg" alt=""></center>
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"> Ariana</i></h3>
+                        <p> Nom : Zakia</p>
+                        <p> Prénom : Khanfir</p>
+                        <p> Age : 40 ans </p>
+                        <p> Numéro : 73 567 387 2</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">
+                            70dt /j
+                        </div>
+                        <center><a class="btn" href="#ancre1">Valider</a></center>
+                    </div>
+                </div>
+                <div class="box">
+                    <center><img src="nounou2.jpg" alt=""></center>
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"> Menzah 8</i></h3>
+                        <p> Nom : Cyrine</p>
+                        <p> Prénom : Hamzaoui</p>
+                        <p> Age : 29 ans</p>
+                        <p> Numéro : 22 547 977 1</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">
+                            65dt /j
+                        </div>
+                        <center><a class="btn" href="#ancre1">Valider</a></center>
+                    </div>
+                </div>
+                <div class="box">
+                    <center><img src="nounou3.jpg" alt=""></center>
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"> Naser</i></h3>
+                        <p> Nom : Asma</p>
+                        <p> Prénom : Dassi</p>
+                        <p> Age : 27 ans</p>
+                        <p> Numéro : 23 594 987 5</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="farfa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">
+                            60dt /j
+                        </div>
+                        <center><a class="btn" href="#ancre1">Valider</a></center>
+                    </div>
+                </div>
+                <div class="box">
+                    <center><img src="nounou4.jpg" alt=""></center>
+                    <div class="content">
+                        <h3><i class="fas fa-map-marker-alt"> Tunis</i></h3>
+                        <p> Nom : Sarah</p>
+                        <p> Prénom : Hamzaoui</p>
+                        <p> Age : 23 ans</p>
+                        <p> Numéro : 23 567 987 3</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <div class="price">
+                            70dt /j
+                        </div>
+                        <center><a class="btn" href="#ancre1">Valider</a></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <h3 class="titre" id="ancre1"> 2ème étape : Veuillez remplir ce formulaire : </h3>
+        <br><br>
+        <form action="" id="imprimer" name="divName">
+            <span>Votre nom <em style="color: rgb(206, 11, 11);">* </em>: </span>
+            <input type="text" class="box nomprenom" placeholder="Nom">
+            <span>Votre prénom <em style="color: rgb(206, 11, 11);">* </em>: </span>
+            <input type="text" class="box nomprenom" placeholder="Prénom">
+            <span>Le nom de votre enfant <em style="color: rgb(206, 11, 11);">* </em> : </span>
+            <input type="text" class="box" placeholder="Prénom enfant">
+            <span>Votre email <em style="color: rgb(206, 11, 11);">* </em> : </span>
+            <input type="email" class="box" placeholder="Entez votre email">
+            <span>Votre numéro <em style="color: rgb(206, 11, 11);">* </em> : </span>
+            <input type="tel" class="box" placeholder="Entez votre numéro">
+            <span>Date du depot <em style="color: rgb(206, 11, 11);">* </em> : </span>
+            <input type="datetime-local" class="box" name="date">
+            <div class="icon">
+                <span>Le sexe de l'enfant <em style="color: rgb(206, 11, 11);">* </em>: </span>
+                <center>
+                    <i class="fa-solid fa-mars"></i>
+                    <i class="fa-solid fa-venus"></i>
+                </center>
+            </div>
+            <center>
+                <select class="age">
+                <option value="Age enfant" selected disabled>Age enfant</option>
+                <option value="age1">0 - 3 ans</option>
+                <option value="age2">4 - 6 ans</option>
+                <option value="age3">7 ans ++</option>
+                </select>
+            </center>
+
+            <div id="check1">
+                <input type="checkbox">
+                <label for=""> Repas inclus </label>
+            </div>
+            <div id="check2">
+                <input type="checkbox">
+                <label for=" "> Demi journée </label>
+            </div>
+            <div id="check3">
+                <input type="checkbox">
+                <label for=""> Journée complète</label>
+            </div>
+
+            <br><br><br>
+            <div class="war">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>Merci d'imprimer ce document et de l'apporter avec vous.</p>
+            </div>
+            <div class="qr">
+                <img src="" style="float:right;">
+            </div>
+            <div>
+                <button id="generer" type="button"> Générer un QR code</button>
+            </div>
+            <div>
+                <!-- <input type="submit" class="btn" value="Confirmer">-->
+
+
+                <input type="button" onclick="window.location.href='payer.html';" class="btn" value="Confirmer">
+
+                <i class="fa-solid fa-print , btn" onclick="imprimer('imprimer')"></i>
+
+            </div>
+        </form>
+    </section>
+    <br><br><br>
+    <!--debut avis client -->
+    <section class=" reviews " id="reviews">
+        <h1 class="heading ">
+            Clients satisfaits
+        </h1>
+        <div class="box-container container ">
+            <div class="box ">
+                <img src="pic-2.png " alt=" ">
+                <p>Une très bonne expérience avec vous ! Fortement recommandé!</p>
+                <br><br><br>
+                <div class="stars ">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star-half-alt "></i>
+                </div>
+                <h3>Sayma</h3>
+                <span>Cliente satisfaite</span>
+            </div>
+            <div class="box ">
+                <img src="pic-1.png " alt=" ">
+                <p>Tout est agréable ! Mes enfants se sentent vraiment en sécurité.</p>
+                <br><br><br>
+                <div class="stars ">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <h3>Ahmed</h3>
+                <span>Client satisfait</span>
+            </div>
+            <div class="box ">
+                <img src="pic-3.png " alt=" ">
+                <p id="client3 ">Enfin je suis tranquille car je suis sûre que mon bébé est bien gâté et surtout en sécurité ! </p>
+                <div class="stars ">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                </div>
+                <h3>Mohamed</h3>
+                <span>Client satisfait</span>
+            </div>
+        </div>
+        <br><br>
+    </section>
+    <!--fin avis client -->
+    <br>
+    <!--debut  votre avis  -->
+    <h1 class="heading ">
+        Votre avis compte vraiment pour nous
+    </h1>
+    <br>
+    <center>
+        <div class="container3">
+            <div class="post">
+                <div class="text">Merci de nous évaluer!</div>
+                <div class="edit">MODIF</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#">
+                    <p></p>
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Décrivez votre avis.. "></textarea>
+                    </div>
+                    <div>
+
+                        <button type="submit" class="btn envoyer">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+    <br><br><br><br>
+    <footer>
+        <div class="row1 ">
+            <div class="col1 ">
+                <img src="IMG_2477-removebg-preview.png " alt="logo ">
+                <p class="ft "><em>" WE CARE "</em> est une application web qui facilite votre vie en prenant soin de vos enfants et donnant des conseils pour améliorer vos relations avec eux. On offre aussi un espace pour ceux qui veulent nous rejoindre. </p>
+            </div>
+            <div class="col1 ">
+                <h3>Contact</h3>
+                <p class="email-id ">wecare@outlook.com</p>
+                <h5>+216 54 764 765 9</h5>
+            </div>
+            <div class="col1 ">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="acceuil.html ">Acceuil</a></li>
+                    <li><a href="conseils.html ">Conseils</a></li>
+                    <li><a href="espacep.html ">Espace parents</a></li>
+                    <li><a href="espaceemp.html">Espace Babysitter</a></li>
+                </ul>
+            </div>
+            <div class="col1 ">
+                <h3>newsletter</h3>
+                <p>Recevez en avant première les dernières nouveautés et exlusivités </p>
+                <form class="f ">
+                    <i class="far fa-envelope "></i>
+                    <input type="email " placeholder="enter votre email " required>
+                    <button type="submit "> <i class="fas fa-arrow-right "></i></button>
+                </form>
+                <div class="social-icons ">
+                    <i class="fab fa-facebook-f "></i>
+                    <i class="fab fa-twitter "></i>
+                    <i class="fab fa-whatsapp "></i>
+                    <i class="fab fa-pinterest "></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        const btn = document.querySelector(".envoyer");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = () => {
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+            return false;
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js "></script>
+</body>
+
+</html>

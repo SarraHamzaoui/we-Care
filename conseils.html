@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="conseils.css">
+    <script src="conseils.js" defer></script>
+    <title>Document</title>
+</head>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span><img src="IMG_2477-removebg-preview.png" alt="logo" ></span></a>
+    <nav class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="espacep.html">Espace Parents</a>
+        <a href="espaceemp.html">Espace Babysitter</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"> </i>
+    </div>
+
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="" class="connexion" id="form1">
+        <h3>connexion</h3>
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entez votre email" id="email2" name="email2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+        <div class="controle">
+            <input type="password" class="box" placeholder="Entez votre mot de passe" id="password3" name="password3">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye3" onclick="MyFunction3()">
+            <i id="hide5" class="fa-regular fa-eye"></i>
+            <i id="hide6" class="fa-regular fa-eye-slash"></i>
+        </span>
+
+        <input type="checkbox" id="remember">
+        <label for=""> Se rappeler de moi</label>
+        <button class="btn" type="submit">Se connecter maintenant </button>
+
+        <center>
+            <p>Mot de passe oublié? <a href="#"> Cliquez ici</a></p>
+            <p> Vous n'avez pas de compte? <a href="#" id="liendecreaction">S'inscrire </a></p>
+        </center>
+    </form>
+    <form action="" class="creer " id="form2">
+        <h3>créer un compte</h3>
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entrez le nom d'utilisateur" id="nom" name="nom">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+
+        <div class="controle">
+            <input type="text" class="box" placeholder="Entez votre email" id="email" name="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+
+        </div>
+
+        <div class="controle">
+            <input type="password" class="box" placeholder="Entez votre mot de passe" id="password" name="password">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye" onclick="MyFunction()">
+            <i id="hide1" class="fa-regular fa-eye"></i>
+            <i id="hide2" class="fa-regular fa-eye-slash"></i>
+        </span>
+        <div class="controle">
+            <input type="password" class="box" placeholder="Confirmez votre mot de passe" id="password2" name="password2">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small></small>
+        </div>
+        <span class="eye2" onclick="MyFunction2()">
+            <i id="hide3" class="fa-regular fa-eye"></i>
+            <i id="hide4" class="fa-regular fa-eye-slash"></i>
+        </span>
+        <input type="checkbox" id="remember">
+        <label for=""> Se rappeler de moi</label>
+        <button class="btn" type="submit">Confirmer </button>
+
+        <br>
+        <center>
+            <p> Vous avez déjà un compte? <a href="#" id="lienconnection">Se connecter </a></p>
+        </center>
+    </form>
+</div>
+
+
+
+<br><br><br>
+<section class="home" id="home">
+    <div class="image">
+        <img src="rose-removebg-preview (1) (1).png" alt="">
+    </div>
+    <div class="content">
+        <h3> Le lien mère-enfant </h3>
+        <p>Une "super maman", plus qu'une maman qui gère toutes les responsabilités familiales et professionnelles, c'est une mère consciente qui reconnaît qu'il est bon de déléguer certaines choses aux autres membres de la famille pour que tout fonctionne.
+            Devenez avec nous la maman de vos rêve.</p>
+        <a href="#ancre1" class="btn">Conseils</a>
+        <a href="#ancre2" class="btn" id="btn2">Q&R</a>
+    </div>
+</section>
+
+<body>
+    <br>
+    <div id="ancre1" class="titre">
+        <br>
+        <h2>Conseils pour être une super maman :</h2>
+    </div>
+    <div class="contenu">
+        <div class="parag">
+            <p>La clé pour être une super maman est <em>d’éviter de toujours rechercher la perfection car elle n’existe pas.
+                 </em> En partant de ce fait essentiel, nous vous donnons sept conseils que nous considérons comme primordiaux afin que vous puissiez transiter avec succès et bonheur vers une maternité plus consciente.
+            </p>
+        </div>
+        <div class="list">
+
+            <h2 class="li">
+                1. Aimez et pardonnez
+            </h2>
+            <p class="parag2">
+                <em>L’amour pour la famille se proclame et se démontre.</em> Les enfants ont toujours besoin d’entendre leurs parents leur dire un “Je t’aime”. Ils ne l’entendront jamais assez. Mais il faut également le prouver. Comment ? En prenant le
+                temps de jouer avec eux, d’étudier avec eux, de partager en famille, d’être ferme avec les limites dont ils ont besoin pour grandir en bonne santé tout en leur apportant la communication fluide et propice dont ils ont besoin.
+
+                <em> Le pardon doit également se trouver dans la dynamique familiale.</em> Bien souvent on commettra des erreurs, on pourra même blesser les personnes qui nous sont très chères. Demander pardon et pardonner pour grandir comme des êtres
+                humains fait partie d’une maternité consciente.
+            </p>
+
+            <div><img src="belle-mere-embrassant-son-petit-enfant-exterieur-ete_508626-610.jpg" alt=""></div>
+
+            <br>
+            <h2 class="li">
+                2. Donnez la priorité au plus important
+            </h2>
+            <p class="parag2">
+                <em> Organisez votre agenda et occupez-vous d’abord de ce que l’on ne peut pas reporter. </em>Occupez-vous d’abord de ce qui est inévitable. Si vous devez terminer un travail et que vous connaissez l’heure de sortie de l’école des enfants,
+                profitez du temps pour qu’il soit le plus productif possible et respectez vos responsabilités professionnelles.
+
+                <em>Il existe des solutions technologiques qui peuvent vous aider à organiser vos engagements en tant que femme.</em> Il vous faut simplement donner la priorité au plus urgent et rappelez-vous de ce que vous ne devez pas oublier. Vous
+                pouvez éviter les visites à la banque grâce aux transactions sur internet et vous pouvez organiser vos emails pour vous occuper d’abord des plus importants.
+            </p>
+            <br>
+            <h2 class="li">
+                3. Organisez les tâches domestiques
+            </h2>
+            <p class="parag2">
+                Les tâches domestiques doivent être une responsabilité partagée par tous les membres de la famille. Chacun peut s’occuper d’une tâche en fonction de son âge, de ses forces et de ses capacités.<em> Vous pouvez organiser un calendrier des tâches domestiques réparties entre tous.</em>                L’obsession pour l’ordre et le ménage n’est pas quelque chose de sain, ni le désordre et la saleté.<em> Si vous déléguez des tâches à tous les membres, ensemble vous pourrez parvenir à l’environnement propre et agréable dont vous avez besoin chez vous.</em>                Faites attention de ne pas être une femme qui soutient le machisme. Laissez le père participer aux tâches domestiques. De la même manière, <em>les enfants et les adolescents peuvent avoir différentes responsabilités en fonction de leur âge.</em>
+            </p>
+            <div><img src="organisez-les-taches-domestiques-e1526918155962.png" alt=""></div>
+            <br>
+            <span>
+                <h2 class="li">
+                4. Reconnaissez le père
+                </h2>
+            <p class="parag2" >
+                <em>Une super maman reconnaît et valorise l’homme qui a donné vie à ses enfants. </em>Partagez avec votre partenaire les tâches domestiques et l’éducation des enfants. Nous avons créé à tort une figure maternelle qui peut tout faire, ce
+                qui a anéanti la capacité d’accepter l’amour et le soutien de l’homme-partenaire-père avec qui l’on partage sa vie. Si le couple est séparé, cela ne signifie pas que les enfants se détachent du père. De plus, dans les cas où le père est
+                absent et ne remplit pas ses obligations, la super maman évitera d’inspirer de la rancoeur ou de la haine chez ses enfants. <em>Les problèmes de couple ne doivent pas nuire aux relations avec vos enfants.</em>
+            </p>
+            <br>
+            <span class="read-more-text" >
+                <h2 class="li">
+                    5. Partagez votre temps
+                </h2>
+                <p class="parag2">
+                     Entre toutes les activités réalisées au sein du foyer,<em> il doit rester de l’espace pour partager en famille.</em> Vous devez partager au moins un repas par jour, avec la télé et les téléphones éteints. Les repas en famille favorisent
+                    la santé physique et émotionnelle des enfants et des adolescents. Dans cette organisation,<em>vous devez inclure du temps pour chaque enfant, pour votre partenaire et évidemment, pour vous-même.</em>Et ce que vous n’arriverez pas à faire
+                     aujourd’hui, laissez-le pour demain. Mais faites attention à ce que reporter ne signifie pas oublier.
+                 </p>
+                 <br>
+                 <h2 class="li">
+                     6. Riez et pleurez
+                 </h2>
+                <p class="parag2">
+                Dans la vie familiale il y a de bonnes et de moins bonnes émotions. Une super maman profite de la compagnie familiale et partage la joie d’être ensemble. <em>Elle sourit après une journée de travail difficile</em>; mais en même temps,
+                elle partage les pleurs avec son partenaire et ses enfants dans les circonstances difficiles qui peuvent l’abattre. Partager les émotions, les ressentir, les réguler et agir en conséquence fait partie de l’apprentissage qu’une super maman
+                enseigne à ses enfants. Plus que faire de la théorie,<em>les enfants le voient au quotidien dans l’exemple que leur donne leur mère.</em>
+                 </p>
+                <br>
+                <h2 class="li">
+                7. Prenez soin de vous
+                </h2>
+                <p class="parag2">
+                Vous devez prendre soin de vos enfants, mais aussi de vous. Pour être une super maman et être en accord avec les demandes de vos enfants en pleine croissance, vous devez être en forme physiquement, mentalement et émotionnellement. Une bonne alimentation
+                et de l’exercice est fondamental. De plus, si vous souhaitez que vos enfants mangent sainement et qu’ils fassent du sport depuis tout petit, la meilleure manière de le faire c’est en suivant votre exemple. Si vous vous sentez accablée
+                avec vos responsabilités familiales ou que vous ne savez pas comment gérer une des situations difficiles que cela implique (par exemple, l’adolescence de vos enfants), n’hésitez pas à demander de l’aide à un professionnel. Car de votre
+                équilibre mental et émotionnel dépendra également le bien-être de vos enfants.
+                </p>
+                <center>
+                    <div class="voir-moins" onclick="ouvrir()">Voir moins </div>
+                </center>
+            </span>
+
+        </div>
+        <center>
+            <div class="voir-plus" onclick="ouvrir()">Voir plus </div>
+        </center>
+
+        <br><br>
+        <section class="faq" id="faq">
+
+            <div class="heading1" id="ancre2">
+                <br>
+                <center>
+                    <h1>Questions & Réponses</h1>
+                </center>
+            </div>
+            <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Pourquoi mon bébé dort autant ?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Un nouveau-né dort beaucoup, en moyenne 16 heures par jour les premières semaines. On en profite pour se reposer !
+                    </p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3>Est-ce que je dois réveiller mon bébé pour manger ?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        En théorie non. Bébé se réveillera de lui-même lorsqu’il aura faim.
+                    </p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3> Faut-il changer le bébé avant ou après qu’il ait mangé ?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Certains disent avant, car ainsi l’enfant sera plus à l’aise pour téter. Mais il est parfois difficile de faire attendre un bébé impatient. A nous de voir !
+                    </p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3> Suis-je une mauvaise mère si je lui donne une tétine ?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Mais non ! Certains bébés ont un très fort besoin de succion et seule la tétine peut les calmer.
+                    </p>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading">
+                        <h3> Est-ce que je peux lui donner un bain tous les deux jours ?</h3>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <p class="accordion-content">
+                        Sans problème, surtout si Bébé n’apprécie pas vraiment ce moment.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="ajout" id="ex1">
+
+            <div class="content1">
+                <h3>Pour d'autres questions</h3>
+                <p>Veuillez nous les envoyer ici </p>
+                <br><br>
+                <form action="" class="form2">
+
+                    <input type="email" name="" placeholder="Email" class="email">
+
+                    <div class="textetbouton">
+                        <textarea placeholder="Questions" name="" cols="25"></textarea>
+                        <input type="submit" value="Envoyer" class="btn">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row1">
+                <div class="col1">
+                    <img src="IMG_2477-removebg-preview.png" alt="logo">
+                    <p><em>" WE CARE "</em> est une application web qui facilite votre vie en prenant soin de vos enfants et donnant des conseils pour améliorer vos relations avec eux. On offre aussi un espace pour ceux qui veulent nous rejoindre. </p>
+                </div>
+                <div class="col1">
+                    <h3>Contact</h3>
+                    <p class="email-id">wecare@outlook.com</p>
+                    <h5>+216 54 764 765 9</h5>
+                </div>
+                <div class="col1">
+                    <h3>Liens</h3>
+                    <ul>
+                        <li><a href="acceuil.html">Acceuil</a></li>
+                        <li><a href="conseils.html">Conseils</a></li>
+                        <li><a href="espacep.html">Espace parents</a></li>
+                        <li><a href="espaceemp.html">Espace Babysitter</a></li>
+                    </ul>
+                </div>
+                <div class="col1">
+                    <h3>newsletter</h3>
+                    <p>Recevez en avant première les dernières nouveautés et exlusivités </p>
+                    <form class="f">
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="enter votre email" required class="inp">
+                        <button type="submit"> <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+</body>
+
+</html>

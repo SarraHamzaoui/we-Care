@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="acceuil.css">
+    <script src="accueil.js" defer></script>
+    <title>Accueil</title>
+    <link rel="shortcut" href="IMG_2477-removebg-preview.png">
+</head>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span><img src="IMG_2477-removebg-preview.png" alt="logo"></span></a>
+    <nav class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="espacep.html">Espace Parents</a>
+        <a href="espaceemp.html">Espace Babysitter</a>
+    </nav>
+    <div class="icons">
+        <i class="fas fa-user" id="login-btn"> </i>
+    </div>
+</header>
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="" class="connexion">
+        <h3>connexion</h3>
+        <input type="email" class="box" placeholder="Entez votre email">
+        <input type="password" class="box" placeholder="Entez votre mot de passe">
+        <input type="checkbox" id="remember">
+        <label for=""> Se rappeler de moi</label>
+        <input type="submit" value="Se connecter maintenant" class="btn">
+        <center>
+            <p>Mot de passe oublié? <a href="#"> Cliquez ici</a></p>
+            <p> Vous n'avez pas de compte? <a href="#" id="liendecreaction">S'inscrire </a></p>
+        </center>
+    </form>
+    <form action="" class="creer">
+        <h3>créer un compte</h3>
+        <input type="text" class="box" placeholder="Entrez le nom d'utilisateur">
+        <input type="email" class="box" placeholder="Entez votre email">
+        <input type="password" class="box" placeholder="Entez votre mot de passe">
+        <input type="password" class="box" placeholder="Confirmez votre mot de passe">
+        <input type="checkbox" id="remember">
+        <label for=""> Se rappeler de moi</label>
+        <input type="submit" value="Confirmer" class="btn">
+        <br>
+        <center>
+            <p> Vous avez déjà un compte? <a href="#" id="lienconnection">Se connecter </a></p>
+        </center>
+    </form>
+</div>
+
+<body>
+    <section class="photo">
+        <div id="caroussel">
+
+            <center>
+                <h4 class="titre2">"We care"</h4>
+            </center>
+            <h4 id="description"> la sécurité c'est notre priorité</h4>
+            <div class="images">
+                <img src="final1.jpg" alt="image1" id="ima1">
+                <img src="bebebye.jpg" alt="image2" id="ima2">
+                <img src="BEBE3.0.jpg" alt="image3" id="ima3">
+                <img src="final4.jpg" alt="image4" id="ima4">
+            </div>
+        </div>
+    </section>
+
+    <!--about starts -->
+    <section class="about" id="about">
+        <h1 class="heading2">A propos de nous</h1>
+        <br>
+        <div class="box-container">
+            <div class="box1">
+                <img src="petiteimage-removebg-preview (1).png" id="image1" alt="">
+                <h3>En tant que parent</h3>
+                <p>Trouvez avec nous une nounou pour votre enfant qui pourra s'occuper de lui , à temps partiel , à temps plein , de jour et de nuit.</p>
+                <a href="espacep.html" class="btn">Cliquer ici</a>
+            </div>
+            <div class="box1">
+                <img src="petiteimage__1_-removebg-preview (1).png" id="image2" alt="">
+                <h3>En tant que babysitter</h3>
+                <p>Vous êtes à la recherche d'un emploi, vous aimez les enfants et vous êtes capable de vous occuper d'eux et de les protéger. Vous êtes notre profil. Rejoignez-nous.</p>
+                <a href="#" class="btn" id="bouton2">Cliquer ici</a>
+            </div>
+            <div class="box1">
+                <img src="petiteimage2-removebg-preview (1).png" id="image3" alt="">
+                <h3>Pour des conseils</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ut, consequuntur atque distinctio quam laudantium sunt tenetur.</p>
+                <a href="conseils.html" class="btn">Cliquer ici</a>
+            </div>
+        </div>
+    </section>
+    <!--about ends -->
+    <br><br><br>
+
+
+
+    <center>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102239.40008056808!2d10.073237030954925!3d36.79499988586979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis!5e0!3m2!1sfr!2stn!4v1646855896991!5m2!1sfr!2stn"
+                allowfullscreen="" loading="lazy" id="map">
+        </iframe>
+        </div>
+        <p class="sousmap">Nous travaillons pour le moment sur grand tunis</p>
+    </center>
+
+
+
+    <br><br>
+
+    <!--contact debut-->
+    <center>
+        <h1 class="heading2">Contactez-nous</h1>
+
+    </center>
+    <div class="container2">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+
+                <input type="text" class="field" placeholder="Votre nom">
+                <input type="email" class="field" placeholder="Votre email">
+                <input type="text" class="field" placeholder="Votre num ">
+                <textarea class="field area" placeholder="Messages"></textarea>
+                <button class="btn">Envoyer</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--contact fin-->
+
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="row1">
+            <div class="col1">
+                <img src="IMG_2477-removebg-preview.png" alt="logo">
+                <p class="ft"><em>" WE CARE "</em> est une application web qui facilite votre vie en prenant soin de vos enfants et donnant des conseils pour améliorer vos relations avec eux. On offre aussi un espace pour ceux qui veulent nous rejoindre. </p>
+            </div>
+            <div class="col1">
+                <h3>Contact</h3>
+                <p class="email-id">wecare@outlook.com</p>
+                <h5>+216 54 764 765 9</h5>
+            </div>
+            <div class="col1">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="acceuil.html">Acceuil</a></li>
+                    <li><a href="conseils.html">Conseils</a></li>
+                    <li><a href="espacep.html">Espace parents</a></li>
+                    <li><a href="espaceemp.html">Espace Babysitter</a></li>
+                </ul>
+            </div>
+            <div class="col1">
+                <h3>newsletter</h3>
+                <p>Recevez en avant première les dernières nouveautés et exlusivités </p>
+                <form class="form2">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="enter votre email" class="inp" required>
+                    <button type="submit" class="b"> <i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
